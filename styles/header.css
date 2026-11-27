@@ -1,0 +1,117 @@
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #E6031D;
+    border-bottom: solid 2px #004292;
+}
+
+header a img {
+    height: 70px;
+    margin: 5px 0 0 0;
+    width: auto;
+}
+
+header ul {
+    display: none;
+    flex-direction: row;
+    float: right;
+    align-items: center;
+    height: 75px;
+    margin: 2.5px;
+}
+
+header ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    height: 40px;
+    margin: 0 10px;
+    padding: 0 15px;
+    display: block;
+    transition: .35s;
+    display: flex;
+    align-items: center;
+    border: solid #E6031D 4px;
+    border-radius: 10px;
+}
+
+header ul a:hover, header ul a.active {
+    background-color: white;
+    color: darkred;
+    border-color: darkred;
+}
+
+header div.hamburgerMenu {
+    display: flex;
+    height: 30px;
+    width: 35px;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
+    cursor: pointer;
+    margin: 25px 20px 0 0;
+}
+
+header div.hamburgerMenu div {
+    width: 33px;
+    height: 6px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+div div.bluePart {
+    background-color: #004292;
+    padding-bottom: 2px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 100dvh;
+    width: 100dvw;
+    right: -100%;
+    background-color: #252525;
+    transition: .35s;
+}
+
+nav div.close {
+
+}
+
+nav div.close div {
+
+}
+
+nav div.close div:first-child {
+    
+}
+
+nav div.close div:last-child {
+    
+}
+
+@media (min-width: 500px) {
+
+    div div.bluePart {
+        border-radius: 0 0 22px 0;
+        padding: 0 12px 2px 0px;
+        corner-shape: bevel;
+        width: 298px;
+    }
+
+}
+
+@media (min-width: 940px) {
+
+    header ul {
+        display: flex;
+    }
+
+    header div.hamburgerMenu {
+        display: none;
+    }
+
+}
